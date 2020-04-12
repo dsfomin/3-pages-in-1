@@ -13,7 +13,7 @@
 			font-size: 14px;
 		}
 
-		h5 {
+		h1 {
 			font-size: 15px;
 		}
 
@@ -92,10 +92,19 @@
 		}
 
 		.two_columns {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			align-items: center;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: row wrap;
+			        flex-flow: row wrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 		}
 
 		.two_columns img {
@@ -110,10 +119,19 @@
 		}
 
 		.one_column {
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-flow: row wrap;
-			justify-content: space-between;
-			align-items: center;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: row wrap;
+			        flex-flow: row wrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
 		}
 
 		.one_column img {
@@ -172,6 +190,8 @@
 		  	color: blue;
 		  	background: white;
 		  	font-weight: bold;
+		  	-webkit-transition: 0.3s linear;
+		  	-o-transition: 0.3s linear;
 		  	transition: 0.3s linear;
 		}
 
@@ -191,16 +211,16 @@
 	 </style>
 </head>
 <body>
-	<head>
 		<div class="main">
 			<div class="left">
 				<div class="content">
 					<div class="left_column">
-						<figure>
-							<img class="foto" src="img/snake_big.jpg" alt="Змея">
-							<figcaption><h5>It's the main foto</h5></figcaption>
-						</figure>
-						
+						<head>
+							<figure>
+								<img class="foto" src="img/snake_big.jpg" alt="Змея">
+								<figcaption><h1>It's the main foto</h1></figcaption>
+							</figure>
+						</head>
 						<div class="info">
 							<div class="menu">
 								<nav class="three">
@@ -263,10 +283,12 @@
 			<div class="central">
 				<div class="content">
 					<div class="left_column">
-						<figure>
-							<img class="foto" src="img/fox_big.jpg" alt="">
-							<figcaption></figcaption>
-						</figure>
+						<head>
+							<figure>
+								<img class="foto" src="img/fox_big.jpg" alt="">
+								<figcaption></figcaption>
+							</figure>
+						</head>
 						<div class="info">
 							<div class="menu">
 								<nav class="three">
@@ -292,10 +314,12 @@
 			<div class="right">
 				<div class="content">
 					<div class="left_column">
-						<figure>
-							<img class="foto" src="img/bug_big.jpg" alt="">
-							<figcaption><h5>It's the main foto</h5></figcaption>
-						</figure>
+						<head>
+							<figure>
+								<img class="foto" src="img/bug_big.jpg" alt="">
+								<figcaption><h1>It's the main foto</h1></figcaption>
+							</figure>
+						</head>
 						<div class="info">
 							<div class="menu">
 								<nav class="three">
@@ -336,6 +360,5 @@
 				</div>
 			</div>
 		</div>	
-	</head>
 </body>
 </html>
